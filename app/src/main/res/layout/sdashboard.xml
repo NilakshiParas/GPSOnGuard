@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#FFFFFF">
+
+    <LinearLayout android:id="@+id/dashhead"
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="12dip"
+          >
+                
+           <TextView android:id="@+id/nameshift" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3C3C3C"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text=""/>         
+       </LinearLayout>
+        
+      <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dp"
+        android:scaleY="1"
+        android:orientation="horizontal"
+        android:layout_below="@id/dashhead">
+        >
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/sms"
+            android:scaleType="fitXY"/>
+
+        
+        <ImageButton
+            android:id="@+id/poi"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/create_poi"
+            android:scaleType="fitXY"/>
+        
+        <ImageButton
+            android:id="@+id/scanqr"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/scan"
+            android:scaleType="fitXY"/>
+        </LinearLayout>
+            
+        <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_margin="10dp"
+        android:scaleY="1"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout1">
+        >
+             
+        <ImageButton
+            android:id="@+id/sendreport"
+            android:layout_weight="1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/sendreport"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:id="@+id/standorder"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:background="@drawable/standingorder"
+            android:scaleType="fitXY"/>
+        
+        <!-- <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/e911"
+            android:scaleType="fitXY"/> -->
+
+    </LinearLayout>
+    
+         <LinearLayout
+        android:id="@+id/linearLayout3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scaleY="1"
+        android:orientation="vertical"
+        android:layout_below="@id/linearLayout2">
+        >
+         <TextView android:id="@+id/lat" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_margin="20dp"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Retriving GPS location...."/>
+         
+        <ImageButton
+            android:id="@+id/button_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/logout_selector" 
+            android:layout_marginLeft="120dp"
+            
+            />    
+        </LinearLayout>
+        
+
+    
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:handle="@+id/drawerHandle"
+        android:content="@+id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+ 
+        <ImageView
+            android:id="@+id/drawerHandle"
+            android:src="@drawable/help_tab_selector"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp">
+        </ImageView>
+ 
+        <LinearLayout             
+            android:id="@+id/contentLayout"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/e911"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            </ImageView>
+        </LinearLayout>
+    </SlidingDrawer>
+    
+
+    
+  </RelativeLayout>
+</FrameLayout>

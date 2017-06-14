@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/flipper"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent">
+
+
+  <FrameLayout android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" 
+            android:layout_marginTop="50dip">
+
+ <TextView android:id="@+id/nameshift" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3C3C3C"
+                android:textSize="20sp"
+                android:textStyle="bold" android:layout_gravity="center_horizontal"
+                android:text=""/>  
+           
+     </FrameLayout>
+
+
+    <LinearLayout             
+            android:id="@+id/contentLayout"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:src="@drawable/e911"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            </ImageView>
+        </LinearLayout>
+
+
+
+ </ViewFlipper>

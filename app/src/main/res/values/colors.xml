@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellow">#ffffcc</color>
+    <color name="darkorange">#d46c1e</color>
+    <color name="lightorange">#ff8224</color>
+    <color name="greytxt">#7f7f7f</color>
+    <color name="greytxtbox">#d9d0d0</color>
+    <color name="ultrabyte">#757575</color>
+</resources>

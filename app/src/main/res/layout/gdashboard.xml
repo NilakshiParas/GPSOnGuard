@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/dashhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dip">
+
+            <TextView
+                android:id="@+id/nameshift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3C3C3C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashhead"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:scaleY="1">
+            >
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:background="@drawable/sms"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/callsup"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/callsup_selector"
+                android:scaleType="fitXY"
+                android:text="@string/callsup" />
+
+
+            <ImageButton
+                android:id="@+id/scanqr"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/scan"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:scaleY="1">
+            >
+
+            <ImageButton
+                android:id="@+id/sendreport"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:background="@drawable/sendreport"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/standorder"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/standingorder"
+                android:scaleType="fitXY" />
+
+            <!-- <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/e911"
+                android:scaleType="fitXY"/> -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:scaleY="1">
+            >
+
+            <TextView
+                android:id="@+id/lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Retriving GPS location...."
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/button_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/logout_selector"
+
+                />
+        </LinearLayout>
+
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:content="@+id/contentLayout"
+            android:handle="@+id/drawerHandle">
+
+            <ImageView
+                android:id="@+id/drawerHandle"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:src="@drawable/help_tab_selector"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/e911"></ImageView>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addpoi"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--  Header  Starts-->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:scaleType="center">
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1811d"
+        android:gravity="center"
+        android:text="Add a New POI"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <!--  Header Ends -->
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center">
+        <!-- Error messages -->
+        <TextView
+            android:id="@+id/poiwarning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/save_poi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poiwarning"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="Save POI"></Button>
+
+        <Button
+            android:id="@+id/close_poi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poiwarning"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@+id/save_poi"
+            android:layout_weight="1"
+            android:text="Close"></Button>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dip">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Name:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/poiname"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint=""
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHighlight="#ff0000"
+                android:textCursorDrawable="@null"></EditText>
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Latitude:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/poilat"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:focusable="false"
+                android:hint=""
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHighlight="#ff0000"
+                android:textCursorDrawable="@null"></EditText>
+
+            <TextView
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:gravity="left"
+                android:text="Longitude:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/poilon"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:focusable="false"
+                android:hint=""
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHighlight="#ff0000"
+                android:textCursorDrawable="@null"></EditText>
+
+            <TextView
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.17"
+                android:gravity="left"
+                android:text="Radius (in feet):"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/poirad"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint=""
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHighlight="#ff0000"
+                android:textCursorDrawable="@null"></EditText>
+
+            <TextView
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.17"
+                android:gravity="left"
+                android:text="Address:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/poiaddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:minLines="2"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHighlight="#ff0000"
+                android:textCursorDrawable="@null"></EditText>
+
+            <TextView
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.17"
+                android:gravity="left"
+                android:text="Description :"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/poidesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:layout_marginTop="0dip"
+                android:background="@drawable/edittextbg"
+                android:ems="20"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:minLines="3"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHighlight="#ff0000"
+                android:textCursorDrawable="@null"></EditText>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

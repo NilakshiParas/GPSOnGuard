@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GPS ON GUARD</string>
+    <string name="result_succeeded">Barcode</string>
+    <string name="result_failed">No barcode found</string>
+    <string name="result_failed_why">"The user gave up and pressed Back"</string>
+    <string name="ok_button">Send report</string>
+    <string name="no_button">Cancel</string>
+    <string name="sms">SMS</string>
+    <string name="callsup">Call Supervisor</string>
+    <string name="scan">Scan Barcode</string>
+    <string name="sendrpt">Send Report</string>
+    <string name="standord">Standing Order</string>
+    <string name="createpoi">Create POI</string>
+    <string name="site_name"><a>Site Name</a></string>
+    <string name="exitpassword">gog2</string>
+    <string name="yourneedmarshmallow">GPSONGuard needs to access the </string>
+    <string name="permissiondenied">Access Permission. </string>
+
+</resources>

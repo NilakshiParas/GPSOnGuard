@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtTopHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:background="@color/darkorange"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Report Description"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_below="@+id/txtTopHeading"
+        android:id="@+id/layoutcansend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            android:background="@drawable/edittxt_greyback"
+            android:text="Cancel"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txtSendReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/edittxt_greyback"
+            android:text="Send Report"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layoutcansend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:hint="Enter Description"
+            android:background="@drawable/orangeline_box"
+            android:textCursorDrawable="@color/darkorange"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:padding="5dp"
+            android:textColorHint="@color/greytxt"
+            android:textColor="@android:color/black"
+            android:imeOptions="actionDone"/>
+        <ImageView
+            android:id="@+id/imgReport"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
